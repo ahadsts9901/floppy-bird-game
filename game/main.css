@@ -11,19 +11,21 @@ body {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
     background-color: rgba(113, 197, 207, 255);
+    height: 100vh;
 }
 
 #board {
-    border: 0;
-    height: 35em;
+    border: 5px solid #fff;
+    height: 100vh !important;
     width: 25em;
     background-image: url(../images/floppybirdbg.png);
+    background-size: cover;
 }
 
 #restart {
@@ -43,9 +45,8 @@ body {
 }
 
 .front {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    height: 35em;
+    border: 5px solid #fff;
+    height: 100vh!important;
     width: 25em;
     display: flex;
     align-items: center;
@@ -91,16 +92,14 @@ body {
     cursor: pointer;
 }
 
-@media (max-width:505px) {
-    #board {
-        height: 45em;
-        width: 22.5em;
-        background-image: url(../images/floppybirdbg-ss.png);
-    }
-}
-
 @media (max-width:400px) {
     body {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width:320px) {
+    body {
+        font-size: 0.7em;
     }
 }

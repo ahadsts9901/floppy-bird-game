@@ -133,7 +133,10 @@ function update() {
         }
     }
 
-    //Generating Score Dynamically
+    // Reset the transformation matrix to identity
+    context.setTransform(1, 0, 0, 1, 0, 0);
+
+    // Generating Score Dynamically
     context.fillStyle = "white";
     context.font = "45px 'Space Mono'";
     context.fillText(score, 5, 45);
